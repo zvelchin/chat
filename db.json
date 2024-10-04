@@ -1,0 +1,152 @@
+{
+  "users": [
+    {
+      "id": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "username": "user",
+      "password": "48484848",
+      "is_online": false
+    },
+    {
+      "id": "d7c8b657-17cd-4026-9ea7-d729c96c3b41",
+      "username": "Kori",
+      "password": "1111",
+      "is_online": false
+    },
+    {
+      "id": "181de00a-a833-4fc5-ac7a-bf9b0a204b44",
+      "username": "Allan",
+      "password": "1111",
+      "is_online": false
+    },
+    {
+      "id": "0f4c3beb-f82e-4715-8681-00851c3cef70",
+      "username": "Hanan",
+      "password": "1111",
+      "is_online": true
+    },
+    {
+      "id": "46748a1c-e6b4-4c40-8bcc-1f75d6ba1d2c",
+      "username": "Rem",
+      "password": "1111",
+      "is_online": false
+    },
+    {
+      "id": "837d40a8-4106-4009-928f-1dee8d5d003c",
+      "username": "Halsey",
+      "password": "1111",
+      "is_online": true
+    },
+    {
+      "id": "18256b7c-8ac4-41fd-9fcb-4ed662fc4cff",
+      "username": "Cleon",
+      "password": "1111",
+      "is_online": false
+    },
+    {
+      "id": "3f84f142-8693-4d17-9389-24bfc9d9afad",
+      "username": "Meg",
+      "password": "1111",
+      "is_online": true
+    },
+    {
+      "id": "50e3a917-5ea2-4151-a37b-d8156b372f83",
+      "username": "Zitella",
+      "password": "1111",
+      "is_online": true
+    }
+  ],
+  "channels": [
+    {
+      "name": "First channel",
+      "id": 1
+    },
+    {
+      "name": "Second channel",
+      "id": 2
+    }
+  ],
+  "messages": [
+    {
+      "channel_id": "1",
+      "from_user": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "content": "Hello all",
+      "id": 1
+    },
+    {
+      "channel_id": "2",
+      "from_user": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "content": "Where is my key?",
+      "id": 2
+    },
+    {
+      "channel_id": "1",
+      "from_user": "d7c8b657-17cd-4026-9ea7-d729c96c3b41",
+      "content": "Hi, who are you?",
+      "id": 3
+    },
+    {
+      "channel_id": "2",
+      "from_user": "d7c8b657-17cd-4026-9ea7-d729c96c3b41",
+      "content": "I don't now...Meg?",
+      "id": 4
+    },
+    {
+      "channel_id": "1",
+      "from_user": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "content": "test",
+      "id": 5
+    }
+  ],
+  "user_channels": [
+    {
+      "channel_id": 1,
+      "user_id": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "id": 1
+    },
+    {
+      "channel_id": "1",
+      "user_id": "d7c8b657-17cd-4026-9ea7-d729c96c3b41",
+      "id": 2
+    },
+    {
+      "channel_id": "1",
+      "user_id": "181de00a-a833-4fc5-ac7a-bf9b0a204b44",
+      "id": 3
+    },
+    {
+      "channel_id": "1",
+      "user_id": "0f4c3beb-f82e-4715-8681-00851c3cef70",
+      "id": 4
+    },
+    {
+      "channel_id": 2,
+      "user_id": "a0fbe85b-2716-41f6-b2ca-4918926ce36e",
+      "id": 5
+    },
+    {
+      "channel_id": "2",
+      "user_id": "d7c8b657-17cd-4026-9ea7-d729c96c3b41",
+      "id": 6
+    },
+    {
+      "channel_id": "2",
+      "user_id": "837d40a8-4106-4009-928f-1dee8d5d003c",
+      "id": 7
+    },
+    {
+      "channel_id": "2",
+      "user_id": "18256b7c-8ac4-41fd-9fcb-4ed662fc4cff",
+      "id": 8
+    },
+    {
+      "channel_id": "2",
+      "user_id": "3f84f142-8693-4d17-9389-24bfc9d9afad",
+      "id": 9
+    },
+    {
+      "channel_id": "2",
+      "user_id": "50e3a917-5ea2-4151-a37b-d8156b372f83",
+      "id": 10
+    }
+  ]
+}

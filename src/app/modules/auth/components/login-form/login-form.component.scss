@@ -1,0 +1,16 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &_title {
+        color: var(--mat-app-text-color);
+        font-weight: 500;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

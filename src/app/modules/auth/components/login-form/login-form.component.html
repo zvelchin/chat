@@ -1,0 +1,23 @@
+<div class="login">
+    <h5 class="login_title">Login to chat</h5>
+    <form [formGroup]="form" class="form">
+        <mat-form-field>
+            <mat-label>Username</mat-label>
+            <input matInput [formControlName]="'username'">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput [formControlName]="'password'" type="password">
+        </mat-form-field>
+        @if (authError$ | async) {
+            <mat-error>{{ authError$ | async }} </mat-error>
+        }
+        <div class="form_btn">
+            <button mat-stroked-button
+                    [disabled]="form.invalid"
+                    (click)="handleLogin()">
+                Login
+            </button>
+        </div>
+    </form>
+</div>

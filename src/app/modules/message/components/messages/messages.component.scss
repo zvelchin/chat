@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 2em;
+    flex: 1 1 auto;
+    gap: 2em;
+}
+
+.message {
+    &_list {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+    &_block {
+        flex: 1 1 auto;
+        padding: 1em;
+        overflow: auto;
+    }
+}

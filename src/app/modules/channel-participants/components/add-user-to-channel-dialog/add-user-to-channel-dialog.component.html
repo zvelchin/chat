@@ -1,0 +1,19 @@
+<mat-dialog-content>
+    <form>
+        <mat-form-field>
+            <mat-label>Select users</mat-label>
+            <mat-select [formControl]="userControl" multiple>
+                @for (user of users$ | async; track user.id) {
+                    <mat-option [value]="user.id">{{user.username}}</mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="close()">Cancel</button>
+    <button mat-button
+            [disabled]="userControl.invalid"
+            (click)="addUsers()"
+    >Add</button>
+</mat-dialog-actions>

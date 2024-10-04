@@ -1,0 +1,20 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    border-top: var(--mdc-outlined-card-outline-color, var(--mat-app-outline-variant)) 1px solid;
+    border-bottom: var(--mdc-outlined-card-outline-color, var(--mat-app-outline-variant)) 1px solid;
+    padding: 0 0 1em;
+    overflow: hidden;
+}
+.channels {
+    &_title {
+        font-weight: 700;
+    }
+    &_list {
+        overflow: auto;
+    }
+    &_add-btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

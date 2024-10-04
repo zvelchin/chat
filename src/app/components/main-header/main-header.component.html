@@ -1,0 +1,20 @@
+<div>
+    <div class="header_title">{{ username$ | async }}</div>
+    <div class="header_subtitle">It's you</div>
+</div>
+<div>
+    @for (item of menuItems; track item.key) {
+        <button mat-icon-button
+                [matTooltip]="item.key"
+                [routerLink]="item.url"
+        >
+            <mat-icon>{{ item.icon }}</mat-icon>
+        </button>
+    }
+
+    <button mat-icon-button
+            [matTooltip]="'Logout'"
+            (click)="logout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</div>

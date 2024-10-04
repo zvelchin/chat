@@ -1,0 +1,15 @@
+<mat-dialog-content>
+    <form>
+        <mat-form-field>
+            <mat-label>Channel name</mat-label>
+            <input matInput [formControl]="channelName">
+        </mat-form-field>
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button (click)="close()">Cancel</button>
+    <button mat-button
+            [disabled]="channelName.invalid"
+            (click)="addChannel()"
+    >Add</button>
+</mat-dialog-actions>

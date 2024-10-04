@@ -1,0 +1,31 @@
+<ng-container
+    [ngTemplateOutlet]="(selectedChannel$ | async) ? messageContainer : empty"
+    [ngTemplateOutletContext]="{ messageList: (messages$ | async) }"
+/>
+
+<ng-template #messageContainer let-messages="messageList">
+    <div class="message_list">
+        <h5># {{ channelName$ | async }}</h5>
+        <mat-card appearance="outlined" class="message_block">
+            <ng-container
+                [ngTemplateOutlet]="messages?.length ? messageList : noMessage"
+                [ngTemplateOutletContext]="{ messages: messages }"
+            />
+        </mat-card>
+    </div>
+
+    <app-message-input (onSendEmitter)="onSendEmitter($event)"/>
+
+    <ng-template #messageList let-messages="messages">
+        @for (message of messages; track message.id; let isLast=$last) {
+            <app-message-item [userId]="message.from_user" [content]="message.content" [isLast]="isLast"/>
+        }
+    </ng-template>
+    <ng-template #noMessage>
+        No message
+    </ng-template>
+</ng-template>
+
+<ng-template #empty>
+    Select channel to start conversation
+</ng-template>

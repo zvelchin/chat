@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.chat-menu-container {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 20%;
+    padding: 1em;
+    border-right: var(--mdc-outlined-card-outline-color, var(--mat-app-outline-variant)) 1px solid;;
+}
+
+.message-container {
+    display: flex;
+    flex: 1 0 auto;
+}
